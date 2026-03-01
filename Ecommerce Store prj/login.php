@@ -64,7 +64,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
 
 </head>
 <body>
-    <a href="ecommerce_front.php"><button>Home</button></a><!--I used <a>tags  for shortcuts,  i prefer click functions-->
+    <a href="ecommerce_front.php"><button>Home</button></a>
     <div>
         <form action="login.php" method="POST">
     <h1>Login</h1>
@@ -86,4 +86,5 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     </div>
     
 </body>
+
 </html>
