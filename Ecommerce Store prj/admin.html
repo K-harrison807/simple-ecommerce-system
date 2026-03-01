@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<style>
+    img{
+        padding-right: 10px;
+        padding-left: 20px;
+        padding-bottom: 30px;
+    }
+    body {
+  background-image: url('downloadBG.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  
+}
+</style>
+</head>
+<body>
+    <form action="shop.php" method="POST" enctype="multipart/form-data">
+   <input type="file" name="image">
+   Price:<input type="number" name="price">
+   <button type="submit" name="upload">upload</button>
+
+   </form>
+</body>
+</html>
