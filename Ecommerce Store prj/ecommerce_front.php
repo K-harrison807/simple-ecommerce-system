@@ -10,7 +10,7 @@
     <style>
         
          .menu {
-            display: none; /* hide menu by default */
+            display: none;
             list-style: none;
             padding: 0;
             margin: 0;
@@ -71,11 +71,12 @@
 
     </script>
     <div class="btns">
-    <a href="Registration.php"><button class="signBtn">Create Account</button></a><!--I used <a>tags  for shortcuts,  i prefer click function-->
+    <a href="Registration.php"><button class="signBtn">Create Account</button></a>
     <a href="login.php"><button class="logBtn">Login</button></a>
     </div>
 
     <h1>Let's Get Fit Together</h1>
 
 </body>
+
 </html>
