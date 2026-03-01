@@ -3,12 +3,11 @@ session_start();
 include('Database.php');
 mysqli_select_db($conn, $databaseName);
 
-// Create cart if not exists
 if(!isset($_SESSION['cart'])){
     $_SESSION['cart'] = [];
 }
 
-// Get product ID
+
 if(isset($_GET['id'])){
     $_SESSION['selected_product'] = $_GET['id'];
 }
@@ -21,7 +20,7 @@ if(isset($_SESSION['selected_product'])){
     $product = mysqli_fetch_assoc($result);
 }
 $message="";
-// ADD
+
 if(isset($_POST['add'])){
     if(!isset($_SESSION['cart'][$id])){
         $_SESSION['cart'][$id] = 0;
@@ -50,7 +49,7 @@ if(isset($_POST['minus'])){
    // exit();
 }
 
-// Get quantity safely
+
 $cartQty = 0;
 if(isset($_SESSION['cart'][$id])){
     $cartQty = $_SESSION['cart'][$id];
@@ -134,4 +133,5 @@ Quantity:<?php echo $cartQty;?><br><br>
 
     
 </body>
+
 </html>
